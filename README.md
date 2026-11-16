@@ -72,5 +72,5 @@ The script will launch a browser, perform the search, and start scraping informa
 ## Notes
 - The script opens a visible browser window (not headless) for scraping.
 - Google Maps DOM may change, which can break the script. If you encounter issues, update the XPaths in `main.py`.
-- For many scrapes in a short period run put prompt in queries.txt and runn `runer.py`.
+- For many scrapes in a short period run put prompt in queries.txt and run `runer.py`.
 
