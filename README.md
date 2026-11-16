@@ -1,8 +1,8 @@
 # Google-Maps-Scrapper
-This Python script utilizes the Playwright library to perform web scraping and data extraction from Google Maps. It is particularly designed for obtaining information about businesses, including their name, address, website, phone number, reviews, and more.
+This Python script utilises the Playwright library to perform web scraping and data extraction from Google Maps. It is particularly designed for obtaining information about businesses, including their name, address, website, phone number, reviews, and more.
 
-## Read Prerequistes
-Latest python was not used and is not suggested
+## Read Prerequisites
+The latest Python was not used and is not recommended
 
 ## Prerequisites
 - Python 3.8 or 3.9 (Python 3.10+ may not be compatible with some dependencies)
@@ -11,8 +11,8 @@ Latest python was not used and is not suggested
 ## Multiple Branches
 The repo currently has 3 branches
 - Main
-- Latest Libraries (The one that works with latest libraries, can cause issues. Prefer Main)
-- Linux ( Linux Support if main branch does not work correctly)
+- Latest Libraries (The one that works with the latest libraries; can cause issues. Prefer Main)
+- Linux ( Linux Support if the main branch does not work correctly)
 
 
 ## Key Features
@@ -63,14 +63,26 @@ python main.py -s "Turkish Restaurants in Toronto Canada" -t 20
 
 ## Example
 
-Append new results to an existing CSV file:
-```python main.py -s "Turkish Restaurants in Toronto Canada" -t 20 -o toronto_turkish_restaurants.csv --append
+1. Append new results to an existing CSV file:
+```
+python main.py -s "Diagnostic Centre in Kharar Punjab" -t 20 -o DiagnosticCentreinKhararPunjab.csv --append
 ```
 
-The script will launch a browser, perform the search, and start scraping information. Progress will be displayed in the terminal, and results will be saved to the specified CSV file. If `--append` is used, new results will be added to the end of the file without removing previous data.
+The script will launch a browser, perform the search, and start scraping information. The script displays progress in the terminal and saves results to the specified CSV file. If `--append` is used, new results will be added to the end of the file without removing previous data.
+
+2. For many scrapes in a short period, put the prompt in queries.txt and run `runer.py`.
+   ```
+   cd data
+   python3 aamerge.csv.py
+   ```
+   OR
+   ```
+   cd data
+   python aamerge.csv.py
+   ```
+
 
 ## Notes
 - The script opens a visible browser window (not headless) for scraping.
 - Google Maps DOM may change, which can break the script. If you encounter issues, update the XPaths in `main.py`.
-- For many scrapes in a short period run put prompt in queries.txt and run `runer.py`.
 
