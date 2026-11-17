@@ -116,7 +116,7 @@ def scrape_places(search_for: str, total: int) -> List[Place]:
             browser_path = r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
             browser = p.chromium.launch(executable_path=browser_path, headless=False)
         else:
-            browser = p.chromium.launch(headless=False)
+            browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         try:
             page.goto("https://www.google.com/maps/@32.9817464,70.1930781,3.67z?", timeout=60000)
