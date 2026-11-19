@@ -12,7 +12,7 @@ The latest Python was not used and is not recommended
 The repo currently has 3 branches
 - Main
 - Latest Libraries (The one that works with the latest libraries; can cause issues. Prefer Main)
-- Linux ( Linux Support if the main branch does not work correctly)
+- Linux and MacOS (Both Support if the main branch does not work correctly)
 
 
 ## Key Features
@@ -53,7 +53,7 @@ The repo currently has 3 branches
 Run the script with your desired search term and number of results:
 
 ```bash
-python main.py -s "Turkish Restaurants in Toronto Canada" -t 20
+python main.py -s "Bakery in Italy" -t 20
 ```
 
 - `-s` or `--search`: Search query for Google Maps (default: "turkish stores in toronto Canada")
